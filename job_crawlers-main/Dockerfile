@@ -17,22 +17,9 @@ RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add
     && apt-get install -y google-chrome-stable \
     && rm -rf /var/lib/apt/lists/*
 
-# Install matching ChromeDriver
-RUN CHROME_VER=$(google-chrome --version | grep -oP '[\d.]+') \
-    && CHROME_MAJOR=$(echo $CHROME_VER | cut -d. -f1) \
-    && DRIVER_URL=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json" \
-        | python3 -c "
-import sys, json
-data = json.load(sys.stdin)
-versions = [v for v in data['versions'] if v['version'].startswith('$(echo $CHROME_VER | cut -d. -f1).')]
-dls = versions[-1]['downloads'].get('chromedriver', [])
-print([x['url'] for x in dls if 'linux64' in x['url']][0])
-") \
-    && wget -q "$DRIVER_URL" -O /tmp/chromedriver.zip \
-    && unzip -q /tmp/chromedriver.zip -d /tmp/ \
-    && mv /tmp/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver \
-    && chmod +x /usr/local/bin/chromedriver \
-    && rm -rf /tmp/chromedriver*
+# Install matching ChromeDriver via helper script
+COPY install_chromedriver.sh /tmp/install_chromedriver.sh
+RUN chmod +x /tmp/install_chromedriver.sh && /tmp/install_chromedriver.sh
 
 WORKDIR /app
 COPY requirement.txt .
