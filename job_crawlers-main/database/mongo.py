@@ -1,7 +1,8 @@
+import os
 import pymongo
 
-# Replace <connection_string> with your MongoDB Atlas connection string
-client = pymongo.MongoClient("mongodb://localhost:27017")
+MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017")
+client = pymongo.MongoClient(MONGO_URI)
 
 # Connect to the database and collection
 db = client["crawler"]  # Replace with your database name

@@ -1,10 +1,11 @@
+import os
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 def send_email(job_details_list, receiverEmail = None):
-    from_email = ""
-    from_password = ""
+    from_email = os.environ.get("FROM_EMAIL", "")
+    from_password = os.environ.get("FROM_PASSWORD", "")
     print("In send email function " +receiverEmail)
     to_email = receiverEmail
 

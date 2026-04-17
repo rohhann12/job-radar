@@ -1,37 +1,51 @@
 {
     "Microsoft": [
-        "https://jobs.careers.microsoft.com/global/en/search?q=data%20engineer&lc=United%20States&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
-        "https://jobs.careers.microsoft.com/global/en/search?q=product%20manager&lc=United%20States&l=en_us&pg=1&pgSz=20&o=Recent",
-    "https://jobs.careers.microsoft.com/global/en/search?q=product%20manager&lc=United%20States&p=Product%20Management&et=Full-Time&l=en_us&pg=1&pgSz=20&o=Recent",
-    "https://jobs.careers.microsoft.com/global/en/search?q=AI%20product%20manager&lc=United%20States&p=Product%20Management&et=Full-Time&l=en_us&pg=1&pgSz=20&o=Recent&flt=true",
-    "https://jobs.careers.microsoft.com/global/en/search?q=software%20engineer&lc=United%20States&et=Full-Time&l=en_us&pg=1&pgSz=20&o=Recent&flt=true"
+        "https://jobs.careers.microsoft.com/global/en/search?q=software+engineer&lc=India&l=en_us&pg=1&pgSz=20&o=Recent&et=Full-Time&flt=true",
+        "https://jobs.careers.microsoft.com/global/en/search?q=data+engineer&lc=India&l=en_us&pg=1&pgSz=20&o=Recent&et=Full-Time&flt=true",
+        "https://jobs.careers.microsoft.com/global/en/search?q=software+engineer&lc=India&l=en_us&pg=1&pgSz=20&o=Recent&et=Full-Time&p=Software+Engineering&flt=true"
+    ],
+    "Amazon": [
+        "https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=recent&job_type[]=Full-Time&country[]=IND&base_query=software+development+engineer&",
+        "https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=recent&job_type[]=Full-Time&country[]=IND&base_query=SDE+1&"
     ],
     "Google": [
-        "https://www.google.com/about/careers/applications/jobs/results/?q=product%20manager&location=United%20States&target_level=EARLY&degree=MASTERS&employment_type=FULL_TIME"
+        "https://careers.google.com/jobs/results/?degree=BACHELORS&degree=MASTERS&employment_type=FULL_TIME&location=India&q=software+engineer&jex=ENTRY_LEVEL",
+        "https://careers.google.com/jobs/results/?degree=BACHELORS&degree=MASTERS&employment_type=FULL_TIME&location=India&q=software+developer+engineer&jex=ENTRY_LEVEL"
+    ],
+    "Meta": [
+        "https://www.metacareers.com/jobs?offices[0]=India&teams[0]=Software%20Engineering&is_leadership=0&req_type=0",
+        "https://www.metacareers.com/jobs?offices[0]=India&teams[0]=Infrastructure&is_leadership=0&req_type=0"
     ],
     "Nvidia": [
-        "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite?q=product%20manager&locationHierarchy1=2fcb99c455831013ea52fb338f2932d8&timeType=5509c0b5959810ac0029943377d47364&jobFamilyGroup=0c40f6bd1d8f10ae43ffaefd46dc7e78&jobFamilyGroup=0c40f6bd1d8f10ae43ffc668c6847e8c"
-    ], 
-    "Amazon":[
-        "https://www.amazon.jobs/en/search?offset=100&result_limit=10&sort=recent&job_type%5B%5D=Full-Time&country%5B%5D=USA&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=product%20manager&city=&country=&region=&county=&query_options=&",
-        "https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=recent&job_type%5B%5D=Full-Time&country%5B%5D=USA&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=software%20engineer&city=&country=&region=&county=&query_options=&"
+        "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite?q=software+engineer&locationHierarchy1=2fcb99c455831013ea5303b4610e0dbc&timeType=5509c0b5959810ac0029943377d47364"
     ],
-    "Goldman": ["https://higher.gs.com/results?LOCATION=Boston|Houston&page=1&search=project%20manager&sort=POSTED_DATE", 
-                "https://higher.gs.com/results?LOCATION=Boston|Houston&page=1&search=software&sort=POSTED_DATE"
+    "Atlassian": [
+        "https://atlassian.wd5.myworkdayjobs.com/Atlassian?q=graduate+software+engineer",
+        "https://atlassian.wd5.myworkdayjobs.com/Atlassian?q=associate+software+engineer"
     ],
-    "SWBC":["https://swbc.wd1.myworkdayjobs.com/InformationTechnology?q=software"],
-    "GM FINANCIAL":["https://careers.gmfinancial.com/careers-home/jobs?keywords=project%20manager&stretchUnits=MILES&stretch=10&location=United%20States&woe=12&page=1&sortBy=relevance&radius=10&radiusUnit=MILES&stretchUnit=MILES"],
-    "DocuSign":["https://careers.docusign.com/jobs?page=1&keywords=software%20united%20states&sortBy=posted_date&descending=true"],
+    "Adobe": [
+        "https://adobe.wd5.myworkdayjobs.com/external_experienced?q=MTS&locations=a30a87ed25634629aa6c3958aa2b91ea",
+        "https://adobe.wd5.myworkdayjobs.com/external_experienced?q=software+engineer&locations=a30a87ed25634629aa6c3958aa2b91ea"
+    ],
+    "Salesforce": [
+        "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=associate+member+of+technical+staff&locations=a30a87ed25634629aa6c3958aa2b91ea",
+        "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=AMTS&locations=a30a87ed25634629aa6c3958aa2b91ea"
+    ],
+    "Razorpay": [
+        "https://jobs.lever.co/razorpay?commitment=Full-time&team=Engineering",
+        "https://jobs.lever.co/razorpay?commitment=Full-time&team=Technology"
+    ],
+    "Flipkart": [
+        "https://www.flipkartcareers.com/#!/joblist"
+    ],
+    "Goldman": [
+        "https://higher.gs.com/results?LOCATION=Bengaluru|Hyderabad&page=1&search=software+engineer&sort=POSTED_DATE",
+        "https://higher.gs.com/results?LOCATION=Bengaluru|Hyderabad&page=1&search=technology+analyst&sort=POSTED_DATE"
+    ],
+    "DocuSign": [
+        "https://careers.docusign.com/jobs?page=1&keywords=software+engineer+india&sortBy=posted_date&descending=true"
+    ],
     "Amd": [
-        "https://careers.amd.com/careers-home/jobs?keywords=project%20manager&stretchUnits=MILES&stretch=10&location=United%20States&lat=39.76&lng=-98.5&woe=12&sortBy=posted_date&descending=true&page=1&country=United%20States&categories=Engineering&limit=100"
-    ],
-    "Cibc":["https://cibc.wd3.myworkdayjobs.com/en-US/search?q=application%20consultant"],
-    "TD":[
-        "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers?q=Software&jobFamilyGroup=de769652963501f2001247b507040dac",
-        "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers?q=analyst&jobFamilyGroup=de769652963501f2001247b507040dac",
-        "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers?jobFamilyGroup=de76965296350195765906b50704e3ab"
-    ],
-    "RBC":["https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1?Sub_Category=7911130ac480011863777c3b250d0002" , 
-            "https://rbc.wd3.myworkdayjobs.com/RBCGLOBAL1?q=IT%20Support" ]
-
+        "https://careers.amd.com/careers-home/jobs?keywords=software+engineer&stretchUnits=MILES&stretch=10&location=India&sortBy=posted_date&descending=true&page=1&country=India&limit=100"
+    ]
 }

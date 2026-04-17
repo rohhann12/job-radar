@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: job-radar-backend
+    runtime: docker
+    dockerfilePath: ./job_crawlers-main/Dockerfile
+    dockerContext: ./job_crawlers-main
+    plan: starter
+    envVars:
+      - key: FROM_EMAIL
+        value: jobalert062@gmail.com
+      - key: FROM_PASSWORD
+        sync: false
+      - key: MONGO_URI
+        value: mongodb://job-radar-mongo:27017
+
+  - type: pserv
+    name: job-radar-mongo
+    runtime: docker
+    image:
+      url: docker.io/library/mongo:7
+    disk:
+      name: mongo-data
+      mountPath: /data/db
+      sizeGB: 1
